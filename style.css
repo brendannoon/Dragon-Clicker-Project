@@ -13,14 +13,19 @@ h1, h2{
   justify-content: center;
 }
 
-.container div {
+.dragonCard {
+  background:#FFFFF0;
   padding: 20px;
+  margin: 25px;
+  border: .2em solid #000;
+  border-radius: 2em;
+  filter: drop-shadow(10px 0px 5px grey);
 }
 
 .forestDragon {
-  filter: hue-rotate(20deg) brightness(130%) drop-shadow(15px 0px 10px grey);
+  filter: hue-rotate(20deg) brightness(130%) drop-shadow(10px 0px 8px #556B2F);
 }
 
 .waterDragon {
-  filter: hue-rotate(125deg) brightness(85%) drop-shadow(15px 0px 10px grey);
+  filter: hue-rotate(125deg) brightness(85%) drop-shadow(10px 0px 8px #4444dd);
 }
