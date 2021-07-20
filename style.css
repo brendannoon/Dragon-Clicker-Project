@@ -3,8 +3,24 @@ body {
   text-align: center;
 }
 
-
 h1, h2{
   font-family: 'Julee', cursive;
   color: navy;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container div {
+  padding: 20px;
+}
+
+.forestDragon {
+  filter: hue-rotate(20deg) brightness(130%) drop-shadow(15px 0px 10px grey);
+}
+
+.waterDragon {
+  filter: hue-rotate(125deg) brightness(85%) drop-shadow(15px 0px 10px grey);
 }
