@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
 
-    <title>Dragon Clicker Project</title>
+    <title>Dragon Clicker Project 2.0</title>
 <link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
     
     <!-- Import the webpage's stylesheet -->
@@ -15,12 +16,23 @@
   
   <body>
     
-    <h1>The Dragon Clicker Project</h1>
-    <h2>Click on the Dragon!</h2>
-    <h2>Number of Clicks: <span id ="clickNumber">0</span></h2>
-    <img src="https://cdn.glitch.com/8ff012a0-d643-4c08-b27e-7ce2744a4f17%2Fdragon_1f409.png?v=1626716716225" alt="dragon" onclick="addToClickNumber(1)">
-
+    <h1>The Dragon Clicker Project 2.0</h1>
+    <h2>Click on the Dragons!</h2>
     
+    <div class="container">
+      
+    <div class="forestDragon">
+      <h2>Forest Dragon<br>Number of Clicks: <span id ="d1ClickNumber">0</span></h2>
+    <img src="https://cdn.glitch.com/8ff012a0-d643-4c08-b27e-7ce2744a4f17%2Fdragon_1f409.png?v=1626716716225" alt="forest dragon" onclick="addToD1ClickNumber(1)" width="150">
+    </div>
+    
+    <div class="waterDragon">
+    <h2>Water Dragon<br>Number of Clicks: <span id ="d2ClickNumber">0</span></h2>
+    <img src="https://cdn.glitch.com/8ff012a0-d643-4c08-b27e-7ce2744a4f17%2Fdragon_1f409.png?v=1626716716225" alt="water dragon" onclick="addToD2ClickNumber(1)" width="150">
+    </div>
+    
+    </div>
     
   </body>
 </html>
+
