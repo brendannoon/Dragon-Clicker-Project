@@ -1,31 +1,146 @@
-body {
-  background:yellow;
+body{
+    background: yellow;
+    font-family: "Julee", sans-serif;
+    color: navy;
+    text-align: center;
+}
+
+h1{
+    font-size: 40pt;
+}
+
+h2{
+    font-size: 25pt;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+   filter: drop-shadow(10px 0px 5px grey);
 }
 
-h1, h2{
-  font-family: 'Julee', cursive;
-  color: navy;
+.button1 {
+  background-color: #FFFFF0; 
+  color: black; 
+  border: 2px solid #556B2F;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.dragonCard {
-  background:#FFFFF0;
-  padding: 20px;
-  margin: 25px;
-  border: .2em solid #000;
-  border-radius: 2em;
-  filter: drop-shadow(10px 0px 5px grey);
+.button2 {
+  background-color: #FFFFF0; 
+  color: black; 
+  border: 2px solid #4444dd;
 }
 
-.forestDragon {
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: #FFFFF0; 
+  color: black; 
+  border: 2px solid #555555;
+}
+
+.button3:hover {
+  background-color: #808080;
+  color: white;
+}
+
+.button4 {
+  background-color: #FFFFF0;
+  color: black;
+  border: 2px solid #97582b;
+}
+
+.button4:hover {
+  background-color: #D2B48C;
+  color: white;
+}
+
+.button5 {
+  background-color: #FFFFF0;
+  color: black;
+  border: 2px solid #87CEEB;
+}
+
+.button5:hover {
+  background-color: Cyan;
+  color: white;
+}
+
+.card{
+  background-color: #FFFFF0;
+    padding:20px;
+    display: grid;
+    grid-template-areas: "dragonName dragonName" "dragonImg clickNum";
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin:auto;
+    cursor: pointer;
+    max-width:300px;
+    border: .2em solid #000;
+    border-radius: 2em;
+    filter: drop-shadow(10px 0px 5px grey);
+}
+
+.card h2{
+    grid-area: dragonName;
+}
+.card img{
+    
+    background-color: transparent;
+    border:none;
+    grid-area: dragonImg;
+    cursor: pointer;
+}
+.card output{
+    font-size: 60pt;
+    text-align: center;
+    margin:5px 0;
+    grid-area: clickNum;
+    padding:0;
+}
+
+.forest {
   filter: hue-rotate(20deg) brightness(130%) drop-shadow(10px 0px 8px #556B2F);
 }
 
-.waterDragon {
+.water {
   filter: hue-rotate(125deg) brightness(85%) drop-shadow(10px 0px 8px #4444dd);
+}
+
+.stone {
+  filter: grayscale(100) drop-shadow(10px 0px 8px black);
+}
+
+.sand {
+  filter:  sepia(1) drop-shadow(10px 0px 8px tan);
+}
+
+.ice {
+  filter: hue-rotate(125deg) brightness(300%) drop-shadow(10px 0px 8px skyblue);
 }
